@@ -15,13 +15,13 @@ const HomeScreen = () => {
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: theme.palette.backgroundDefault,
+        backgroundColor: theme.palette.background,
       }}>
       <Text typography="displayLargeRegular">Hello World</Text>
       <Button
         title="Toggle Theme"
         onPress={handleToggleTheme}
-        color={theme.palette.primaryDark}
+        color={theme.palette.neutral900}
       />
     </View>
   );

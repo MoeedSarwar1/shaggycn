@@ -14,7 +14,7 @@ const AppText = ({
     <Text
       style={[
         Typography[typography],
-        color ? {color} : {color: theme.palette.textPrimary},
+        color ? {color} : {color: theme.palette.neutral900},
       ]}>
       {children}
     </Text>
