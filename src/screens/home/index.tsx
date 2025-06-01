@@ -1,5 +1,6 @@
 import {Button, View} from 'react-native';
-import AppText from '../../components/atoms/text';
+
+import {Text} from '../../components/atoms';
 import {useTheme} from '../../theme/context/useTheme';
 
 const HomeScreen = () => {
@@ -16,11 +17,7 @@ const HomeScreen = () => {
         alignItems: 'center',
         backgroundColor: theme.palette.backgroundDefault,
       }}>
-      <AppText
-        typography="displayLargeRegular"
-        color={theme.palette.textPrimary}>
-        Hello World
-      </AppText>
+      <Text typography="displayLargeRegular">Hello World</Text>
       <Button
         title="Toggle Theme"
         onPress={handleToggleTheme}

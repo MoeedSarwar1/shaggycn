@@ -1,97 +1,80 @@
-import colors, {darkColors} from './colors';
+import {darkColors, lightColors} from './colors';
 
 const palette = {
   // Background
-  backgroundDefault: colors.white,
-  backgroundMuted: colors.gray100,
-  backgroundElevated: colors.gray50,
-  backgroundOverlay: colors.overlay,
-  backgroundInverse: colors.gray900,
+  backgroundDefault: lightColors.white,
+  backgroundMuted: lightColors.gray100,
+  backgroundElevated: lightColors.gray50,
+  backgroundOverlay: lightColors.overlay,
+  backgroundInverse: lightColors.gray900,
 
   // Text
-  textPrimary: colors.gray900,
-  textSecondary: colors.gray600,
-  textMuted: colors.gray400,
-  textInverse: colors.white,
-  textLink: colors.primary,
-  textDanger: colors.errorDark,
+  textPrimary: lightColors.gray900,
+  textSecondary: lightColors.gray600,
+  textMuted: lightColors.gray400,
+  textInverse: lightColors.white,
+  textLink: lightColors.blue500,
+  textDanger: lightColors.red700,
 
   // Border
-  borderLight: colors.gray200,
-  borderMedium: colors.gray400,
-  borderDark: colors.gray600,
-  borderFocus: colors.primary,
-  borderError: colors.error,
-  borderSuccess: colors.success,
+  borderLight: lightColors.gray200,
+  borderMedium: lightColors.gray400,
+  borderDark: lightColors.gray600,
+  borderFocus: lightColors.blue500,
+  borderError: lightColors.red500,
+  borderSuccess: lightColors.green500,
 
   // Primary
-  primary: colors.primary,
-  primaryLight: colors.primaryLight,
-  primaryDark: colors.primaryDark,
-  primaryTint: colors.primaryTint,
-  primaryShade: colors.primaryShade,
+  primary: lightColors.blue500,
+  primaryLight: lightColors.blue300,
+  primaryDark: lightColors.blue700,
 
   // Secondary
-  secondary: colors.secondary,
-  secondaryLight: colors.secondaryLight,
-  secondaryDark: colors.secondaryDark,
-  secondaryTint: colors.secondaryTint,
-  secondaryShade: colors.secondaryShade,
-
-  // Tertiary
-  tertiary: colors.tertiary,
-  tertiaryLight: colors.tertiaryLight,
-  tertiaryDark: colors.tertiaryDark,
-  tertiaryTint: colors.tertiaryTint,
-  tertiaryShade: colors.tertiaryShade,
+  secondary: lightColors.purple500,
+  secondaryLight: lightColors.purple300,
+  secondaryDark: lightColors.purple700,
 
   // Success
-  success: colors.success,
-  successLight: colors.successLight,
-  successDark: colors.successDark,
-  successTint: colors.successTint,
-  successShade: colors.successShade,
+  success: lightColors.green500,
+  successLight: lightColors.green300,
+  successDark: lightColors.green700,
 
   // Error
-  error: colors.error,
-  errorLight: colors.errorLight,
-  errorDark: colors.errorDark,
-  errorTint: colors.errorTint,
-  errorShade: colors.errorShade,
+  error: lightColors.red500,
+  errorLight: lightColors.red300,
+  errorDark: lightColors.red700,
 
   // Warning
-  warning: colors.warning,
-  warningLight: colors.warningLight,
-  warningDark: colors.warningDark,
-  warningTint: colors.warningTint,
-  warningShade: colors.warningShade,
+  warning: lightColors.amber500,
+  warningLight: lightColors.amber300,
+  warningDark: lightColors.amber700,
 
   // Info
-  info: colors.info,
-  infoLight: colors.infoLight,
-  infoDark: colors.infoDark,
-  infoTint: colors.infoTint,
-  infoShade: colors.infoShade,
+  info: lightColors.cyan500,
+  infoLight: lightColors.cyan300,
+  infoDark: lightColors.cyan700,
 
   // Overlay
-  overlayLight: colors.overlayLight,
-  overlay: colors.overlay,
-  overlayDark: colors.overlayDark,
+  overlayLight: lightColors.overlayLight,
+  overlay: lightColors.overlay,
+  overlayDark: lightColors.overlayDark,
 
   // Shadow
-  shadow: colors.shadow,
+  shadow: lightColors.shadow,
 
   // Grays
-  gray50: colors.gray50,
-  gray100: colors.gray100,
-  gray200: colors.gray200,
-  gray300: colors.gray300,
-  gray400: colors.gray400,
-  gray500: colors.gray500,
-  gray600: colors.gray600,
-  gray700: colors.gray700,
-  gray800: colors.gray800,
-  gray900: colors.gray900,
+  gray50: lightColors.gray50,
+  gray100: lightColors.gray100,
+  gray200: lightColors.gray200,
+  gray300: lightColors.gray300,
+  gray400: lightColors.gray400,
+  gray500: lightColors.gray500,
+  gray600: lightColors.gray600,
+  gray700: lightColors.gray700,
+  gray800: lightColors.gray800,
+  gray900: lightColors.gray900,
+
+  // All other color scales are available via lightColors
 };
 
 const darkPalette = {
@@ -105,57 +88,39 @@ const darkPalette = {
   textSecondary: darkColors.gray600,
   textMuted: darkColors.gray400,
   textInverse: darkColors.white,
-  textLink: darkColors.primary,
-  textDanger: darkColors.errorDark,
+  textLink: darkColors.blue500,
+  textDanger: darkColors.red700,
 
   borderLight: darkColors.gray200,
   borderMedium: darkColors.gray400,
   borderDark: darkColors.gray600,
-  borderFocus: darkColors.primary,
-  borderError: darkColors.error,
-  borderSuccess: darkColors.success,
+  borderFocus: darkColors.blue500,
+  borderError: darkColors.red500,
+  borderSuccess: darkColors.green500,
 
-  primary: darkColors.primary,
-  primaryLight: darkColors.primaryLight,
-  primaryDark: darkColors.primaryDark,
-  primaryTint: darkColors.primaryTint,
-  primaryShade: darkColors.primaryShade,
+  primary: darkColors.blue500,
+  primaryLight: darkColors.blue300,
+  primaryDark: darkColors.blue700,
 
-  secondary: darkColors.secondary,
-  secondaryLight: darkColors.secondaryLight,
-  secondaryDark: darkColors.secondaryDark,
-  secondaryTint: darkColors.secondaryTint,
-  secondaryShade: darkColors.secondaryShade,
+  secondary: darkColors.purple500,
+  secondaryLight: darkColors.purple300,
+  secondaryDark: darkColors.purple700,
 
-  tertiary: darkColors.tertiary,
-  tertiaryLight: darkColors.tertiaryLight,
-  tertiaryDark: darkColors.tertiaryDark,
-  tertiaryTint: darkColors.tertiaryTint,
-  tertiaryShade: darkColors.tertiaryShade,
+  success: darkColors.green500,
+  successLight: darkColors.green300,
+  successDark: darkColors.green700,
 
-  success: darkColors.success,
-  successLight: darkColors.successLight,
-  successDark: darkColors.successDark,
-  successTint: darkColors.successTint,
-  successShade: darkColors.successShade,
+  error: darkColors.red500,
+  errorLight: darkColors.red300,
+  errorDark: darkColors.red700,
 
-  error: darkColors.error,
-  errorLight: darkColors.errorLight,
-  errorDark: darkColors.errorDark,
-  errorTint: darkColors.errorTint,
-  errorShade: darkColors.errorShade,
+  warning: darkColors.amber500,
+  warningLight: darkColors.amber300,
+  warningDark: darkColors.amber700,
 
-  warning: darkColors.warning,
-  warningLight: darkColors.warningLight,
-  warningDark: darkColors.warningDark,
-  warningTint: darkColors.warningTint,
-  warningShade: darkColors.warningShade,
-
-  info: darkColors.info,
-  infoLight: darkColors.infoLight,
-  infoDark: darkColors.infoDark,
-  infoTint: darkColors.infoTint,
-  infoShade: darkColors.infoShade,
+  info: darkColors.cyan500,
+  infoLight: darkColors.cyan300,
+  infoDark: darkColors.cyan700,
 
   overlayLight: darkColors.overlayLight,
   overlay: darkColors.overlay,
@@ -173,6 +138,8 @@ const darkPalette = {
   gray700: darkColors.gray700,
   gray800: darkColors.gray800,
   gray900: darkColors.gray900,
+
+  // All other color scales are available via darkColors
 };
 
 export function getLightPalette() {
@@ -182,3 +149,6 @@ export function getLightPalette() {
 export function getDarkPalette() {
   return darkPalette;
 }
+
+export type Palette = typeof palette;
+export type PaletteKey = keyof Palette;
