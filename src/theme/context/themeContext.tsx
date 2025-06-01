@@ -1,44 +1,20 @@
 import React, {createContext, ReactNode, useMemo, useState} from 'react';
+import colors, {darkColors} from '../colors';
 import {getDarkPalette, getLightPalette} from '../palette';
 
-const lightTheme = {
+const lightPalette = getLightPalette();
+const darkPalette = getDarkPalette();
+
+export const lightTheme = {
   dark: false,
-  colors: {
-    ...getLightPalette().background,
-    ...getLightPalette().text,
-    ...getLightPalette().primary,
-    ...getLightPalette().secondary,
-    ...getLightPalette().tertiary,
-    ...getLightPalette().success,
-    ...getLightPalette().error,
-    ...getLightPalette().warning,
-    ...getLightPalette().info,
-    ...getLightPalette().overlay,
-    ...getLightPalette().shadow,
-    ...getLightPalette().gray,
-    ...getLightPalette().border,
-  },
-  palette: getLightPalette(),
+  colors, // from colors.ts (light colors)
+  palette: lightPalette,
 };
 
-const darkTheme = {
+export const darkTheme = {
   dark: true,
-  colors: {
-    ...getDarkPalette().background,
-    ...getDarkPalette().text,
-    ...getDarkPalette().primary,
-    ...getDarkPalette().secondary,
-    ...getDarkPalette().tertiary,
-    ...getDarkPalette().success,
-    ...getDarkPalette().error,
-    ...getDarkPalette().warning,
-    ...getDarkPalette().info,
-    ...getDarkPalette().overlay,
-    ...getDarkPalette().shadow,
-    ...getDarkPalette().gray,
-    ...getDarkPalette().border,
-  },
-  palette: getDarkPalette(),
+  colors: darkColors, // from colors.ts (dark colors)
+  palette: darkPalette,
 };
 
 export type AppTheme = typeof darkTheme;

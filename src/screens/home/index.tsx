@@ -7,7 +7,6 @@ const HomeScreen = () => {
 
   const handleToggleTheme = () => {
     toggleTheme();
-    console.log('Theme toggled:', theme.colors);
   };
   return (
     <View
@@ -15,17 +14,17 @@ const HomeScreen = () => {
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: theme.palette.background.default,
+        backgroundColor: theme.palette.backgroundDefault,
       }}>
       <AppText
         typography="displayLargeRegular"
-        color={theme.palette.text.primary}>
+        color={theme.palette.textPrimary}>
         Hello World
       </AppText>
       <Button
         title="Toggle Theme"
         onPress={handleToggleTheme}
-        color={theme.palette.primary.dark}
+        color={theme.palette.primaryDark}
       />
     </View>
   );
