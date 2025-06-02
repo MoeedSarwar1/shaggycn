@@ -12,6 +12,7 @@ const AppText = ({
   const {theme} = useTheme();
   return (
     <Text
+      testID="app-text"
       style={[
         Typography[typography],
         color ? {color} : {color: theme.palette.neutral900},

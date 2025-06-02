@@ -38,11 +38,18 @@ export const ThemeProvider = ({children}: {children: ReactNode}) => {
     [mode],
   );
 
-  const toggleTheme = () =>
-    setMode(prev => (prev === 'light' ? 'dark' : 'light'));
+  const toggleTheme = React.useCallback(
+    () => setMode(prev => (prev === 'light' ? 'dark' : 'light')),
+    [],
+  );
+
+  const contextValue = useMemo(
+    () => ({theme, mode, setMode, toggleTheme}),
+    [theme, mode, setMode, toggleTheme],
+  );
 
   return (
-    <ThemeContext.Provider value={{theme, mode, setMode, toggleTheme}}>
+    <ThemeContext.Provider value={contextValue}>
       {children}
     </ThemeContext.Provider>
   );
