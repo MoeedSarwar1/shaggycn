@@ -1,6 +1,6 @@
-import {Button, View} from 'react-native';
+import {View} from 'react-native';
 
-import {Text} from '../../components/atoms';
+import {Button, Text} from '../../components/atoms';
 import {useTheme} from '../../theme/context/useTheme';
 
 const HomeScreen = () => {
@@ -21,7 +21,9 @@ const HomeScreen = () => {
       <Button
         title="Toggle Theme"
         onPress={handleToggleTheme}
-        color={theme.palette.neutral900}
+        size="large"
+        type="primary"
+        action="solid"
       />
     </View>
   );

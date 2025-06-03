@@ -30,7 +30,11 @@ export type TypographyVariant =
   | 'captionRegular'
   | 'captionMedium'
   | 'captionSemiBold'
-  | 'captionBold';
+  | 'captionBold'
+  | 'tinyRegular'
+  | 'tinyMedium'
+  | 'tinySemiBold'
+  | 'tinyBold';
 
 export type Typography = Record<
   TypographyVariant,
@@ -204,6 +208,30 @@ export const Typography: Typography = {
     fontSize: 12,
     fontWeight: '700',
     lineHeight: 16,
+    fontWeightOption: 'bold',
+  },
+  tinyRegular: {
+    fontSize: 10,
+    fontWeight: '400',
+    lineHeight: 12,
+    fontWeightOption: 'regular',
+  },
+  tinyMedium: {
+    fontSize: 10,
+    fontWeight: '500',
+    lineHeight: 12,
+    fontWeightOption: 'medium',
+  },
+  tinySemiBold: {
+    fontSize: 10,
+    fontWeight: '600',
+    lineHeight: 12,
+    fontWeightOption: 'semibold',
+  },
+  tinyBold: {
+    fontSize: 10,
+    fontWeight: '700',
+    lineHeight: 12,
     fontWeightOption: 'bold',
   },
 };
