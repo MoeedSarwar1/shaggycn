@@ -14,8 +14,6 @@ const HomeScreen = () => {
       style={{
         flex: 1,
         justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: theme.palette.background,
       }}>
       <Text typography="displayLargeRegular">Hello World</Text>
       <Button

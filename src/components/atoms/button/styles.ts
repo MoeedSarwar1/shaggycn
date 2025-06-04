@@ -8,7 +8,6 @@ export const buttonStyles = (theme: AppTheme) =>
       borderRadius: 4,
       alignItems: 'center',
       justifyContent: 'center',
-      backgroundColor: theme.palette.neutral950,
     },
     xsmall: {
       paddingVertical: Spacing.Padding8,
@@ -27,7 +26,7 @@ export const buttonStyles = (theme: AppTheme) =>
       paddingHorizontal: Spacing.Padding12,
     },
     solidPrimary: {
-      backgroundColor: theme.palette.primary500,
+      backgroundColor: theme.palette.neutral900,
     },
     solidSecondary: {
       backgroundColor: theme.palette.secondary500,

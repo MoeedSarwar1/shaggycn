@@ -62,7 +62,7 @@ const AppButton = ({
   if (type === 'disabled') {
     textColorKey = theme.palette.muted400 as keyof typeof theme.palette;
   } else if (type === 'primary') {
-    textColorKey = theme.palette.primary100 as keyof typeof theme.palette;
+    textColorKey = theme.palette.primary50 as keyof typeof theme.palette;
   } else if (type === 'secondary') {
     textColorKey = theme.palette.secondary900 as keyof typeof theme.palette;
   } else {
@@ -73,7 +73,12 @@ const AppButton = ({
     <Pressable
       onPress={onPress}
       disabled={type === 'disabled'}
-      style={[buttonTypeStyle, buttonSizeMap[size], containerStyles]}
+      style={[
+        styles.button,
+        buttonTypeStyle,
+        buttonSizeMap[size],
+        containerStyles,
+      ]}
       testID={testID}>
       <AppText color={textColorKey} typography={textSizeMap[size]}>
         {title}
