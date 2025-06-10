@@ -2,6 +2,7 @@ import {StyleSheet} from 'react-native';
 import {SafeAreaProvider, SafeAreaView} from 'react-native-safe-area-context';
 import HomeScreen from './src/screens/home';
 import {AppTheme, ThemeProvider} from './src/theme/context/themeContext';
+import {Spacing} from './src/theme/spacing';
 
 const App = () => {
   return (
@@ -30,5 +31,6 @@ export const commonStyles = (theme: AppTheme) =>
     container: {
       flex: 1,
       backgroundColor: theme.palette.background,
+      paddingHorizontal: Spacing.Padding16,
     },
   });
