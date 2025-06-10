@@ -22,13 +22,7 @@ module.exports = {
     },
     project: './tsconfig.json',
   },
-  plugins: [
-    'react',
-    'react-native',
-    '@typescript-eslint',
-    'unused-imports',
-    'simple-import-sort',
-  ],
+  plugins: ['react', 'react-native', '@typescript-eslint', 'unused-imports', 'simple-import-sort'],
   rules: {
     'no-console': 'warn',
     'no-debugger': 'error',
@@ -36,7 +30,7 @@ module.exports = {
     'unused-imports/no-unused-imports': 'error',
     'unused-imports/no-unused-vars': [
       'warn',
-      {vars: 'all', varsIgnorePattern: '^_', argsIgnorePattern: '^_'},
+      { vars: 'all', varsIgnorePattern: '^_', argsIgnorePattern: '^_' },
     ],
 
     // TypeScript Rules

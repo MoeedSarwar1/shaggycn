@@ -26,7 +26,13 @@
     "dist",
     "build",
     "scripts",
-    "assets"
+    "assets",
+    "**/__tests__/**",
+    "**/*.test.ts",
+    "**/*.test.tsx",
+    "**/*.spec.ts",
+    "**/*.spec.tsx",
+    "eslintrc.js"
   ],
   "include": ["**/*.ts", "**/*.tsx"]
 }
