@@ -1,97 +1,87 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+Here’s a clean and professional README.md for your ShaggyCn React Native boilerplate with ShadCN-inspired design system:
 
-# Getting Started
+⸻
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
 
-## Step 1: Start Metro
+# ShaggyCn 🧩
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+A modern, opinionated **React Native + TypeScript** boilerplate with a reusable UI component library — inspired by **ShadCN** and powered by **NativeBase Design Kit v3.4**. Designed for developers who want a clean, scalable, and themeable starting point for building mobile apps.
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+![ShaggyCn Preview](./preview.png)
 
-```sh
-# Using npm
-npm start
+## ✨ Features
 
-# OR using Yarn
-yarn start
-```
+- ⚛️ **React Native** with TypeScript
+- 🎨 **Dark & Light theme** support
+- 💅 ShadCN-inspired **design tokens** (color palette, spacing, typography)
+- 🧱 Pre-built, reusable **UI components**
+- 🧼 Pre-configured **ESLint, Prettier, Husky**
+- 🚀 Ready for **open-source contribution**
 
-## Step 2: Build and run your app
+---
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
+## 📦 Tech Stack
 
-### Android
+- [React Native](https://reactnative.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [NativeBase](https://nativebase.io/) v3.4 Design Kit
+- [React Native Vector Icons](https://github.com/oblador/react-native-vector-icons)
+- [ShadCN-style theming](https://ui.shadcn.dev/)
+- [ESLint + Prettier](https://eslint.org/)
 
-```sh
-# Using npm
-npm run android
+---
 
-# OR using Yarn
-yarn android
-```
+## 🚀 Getting Started
 
-### iOS
+```bash
+# Clone the repo
+git clone https://github.com/MoeedSarwar1/shaggycn.git
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
+# Install dependencies
+yarn install
 
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
+# Start the app
+yarn android # or yarn ios
 
-```sh
-bundle install
-```
 
-Then, and every time you update your native dependencies, run:
+⸻
 
-```sh
-bundle exec pod install
-```
+📁 Folder Structure
 
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
+src/
+├── components/      # UI components
+│   └── atoms/
+│   └── molecules/
+├── theme/           # Theme context and tokens
+├── utils/           # Helper functions
+├── hooks/           # Custom hooks
+└── App.tsx
 
-```sh
-# Using npm
-npm run ios
 
-# OR using Yarn
-yarn ios
-```
+⸻
 
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
+🛠 Scripts
+	•	yarn lint: Lint code with ESLint
+	•	yarn format: Format code with Prettier
+	•	yarn test: Run tests
+	•	yarn prepare: Prepare Git hooks with Husky
 
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
+⸻
 
-## Step 3: Modify your app
+🤝 Contributing
 
-Now that you have successfully run the app, let's make changes!
+We welcome contributions! Please open issues or pull requests if you want to improve something.
 
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
+⸻
 
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
+📄 License
 
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
+MIT License © 2025 Moeed Sarwar
 
-## Congratulations! :tada:
+⸻
 
-You've successfully run and modified your React Native App. :partying_face:
+⭐️ Show Some Love
 
-### Now what?
+If you like the project, feel free to give it a ⭐ on GitHub and share it with the community.
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+---
