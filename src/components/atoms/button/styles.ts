@@ -1,27 +1,28 @@
-import {StyleSheet} from 'react-native';
-import {Spacing} from '../../../theme/spacing';
+import { StyleSheet } from 'react-native';
+
+import { Spacing } from '../../../theme/spacing';
 
 export const buttonStyles = () =>
   StyleSheet.create({
     button: {
-      borderRadius: 4,
       alignItems: 'center',
+      borderRadius: 4,
       justifyContent: 'center',
     },
-    xsmall: {
-      paddingVertical: Spacing.Padding8,
+    large: {
       paddingHorizontal: Spacing.Padding12,
-    },
-    small: {
-      paddingVertical: Spacing.Padding8,
-      paddingHorizontal: Spacing.Padding12,
+      paddingVertical: Spacing.Padding12,
     },
     medium: {
+      paddingHorizontal: Spacing.Padding12,
       paddingVertical: Spacing.Padding10,
-      paddingHorizontal: Spacing.Padding12,
     },
-    large: {
-      paddingVertical: Spacing.Padding12,
+    small: {
       paddingHorizontal: Spacing.Padding12,
+      paddingVertical: Spacing.Padding8,
+    },
+    xsmall: {
+      paddingHorizontal: Spacing.Padding12,
+      paddingVertical: Spacing.Padding8,
     },
   });

@@ -1,6 +1,7 @@
-import {TextProps} from 'react-native';
-import {PaletteKey} from '../../../theme/palette';
-import {Typography} from '../../../theme/typography';
+import { TextProps } from 'react-native';
+
+import { PaletteKey } from '../../../theme/palette';
+import { Typography } from '../../../theme/typography';
 
 type Variant = keyof typeof Typography;
 

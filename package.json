@@ -5,13 +5,27 @@
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
-    "lint": "eslint .",
     "start": "react-native start",
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint . --ext .ts,.tsx",
+    "lint:fix": "eslint . --ext .ts,.tsx --fix",
+    "format": "prettier --write ."
   },
   "dependencies": {
+    "@testing-library/react-native": "^13.2.0",
+    "@typescript-eslint/eslint-plugin": "^8.34.0",
+    "@typescript-eslint/parser": "^8.34.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-prettier": "^5.4.1",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-native": "^5.0.0",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "eslint-plugin-unused-imports": "^4.1.4",
     "react": "19.0.0",
-    "react-native": "0.79.2"
+    "react-native": "0.79.2",
+    "react-native-normalize": "^1.0.1",
+    "react-native-safe-area-context": "^5.4.1"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
@@ -29,7 +43,7 @@
     "@types/react-test-renderer": "^19.0.0",
     "eslint": "^8.19.0",
     "jest": "^29.6.3",
-    "prettier": "2.8.8",
+    "prettier": "^3.5.3",
     "react-test-renderer": "19.0.0",
     "typescript": "5.0.4"
   },

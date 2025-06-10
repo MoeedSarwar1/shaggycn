@@ -1,4 +1,4 @@
-import {TextStyle} from 'react-native';
+import { TextStyle } from 'react-native';
 
 export type FontWeight = 'regular' | 'medium' | 'semibold' | 'bold';
 
@@ -36,10 +36,7 @@ export type TypographyVariant =
   | 'tinySemiBold'
   | 'tinyBold';
 
-export type Typography = Record<
-  TypographyVariant,
-  TextStyle & {fontWeightOption: FontWeight}
->;
+export type Typography = Record<TypographyVariant, TextStyle & { fontWeightOption: FontWeight }>;
 
 export const Typography: Typography = {
   displayLargeRegular: {

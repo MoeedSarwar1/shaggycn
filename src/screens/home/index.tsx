@@ -1,12 +1,12 @@
-import {View} from 'react-native';
+import { View } from 'react-native';
 
-import {Button, Text} from '../../components/atoms';
-import {useTheme} from '../../theme/context/useTheme';
-import {Spacing} from '../../theme/spacing';
-import {homeStyles} from './styles';
+import { Button, Text } from '../../components/atoms';
+import { useTheme } from '../../theme/context/useTheme';
+import { Spacing } from '../../theme/spacing';
+import { homeStyles } from './styles';
 
 const HomeScreen = () => {
-  const {toggleTheme} = useTheme();
+  const { toggleTheme } = useTheme();
   const styles = homeStyles();
 
   const handleToggleTheme = () => {
@@ -18,9 +18,9 @@ const HomeScreen = () => {
         <Text typography="bodyRegular">Welcome To The</Text>
         <Text typography="displayLargeRegular">Boilerplate!</Text>
       </View>
-      <View style={{gap: Spacing.Margin16}}>
+      <View style={{}}>
         <Text typography="bodyRegular">Things You Will Find Here Are:</Text>
-        <View style={{gap: Spacing.Margin2}}>
+        <View style={{ gap: Spacing.Margin2 }}>
           <Text typography="displayMediumRegular">Atoms</Text>
           <Text typography="displayMediumRegular">Molecules</Text>
           <Text typography="displayMediumRegular">Templates</Text>

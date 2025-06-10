@@ -1,8 +1,9 @@
-import {StyleSheet} from 'react-native';
-import {SafeAreaProvider, SafeAreaView} from 'react-native-safe-area-context';
+import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
+
+import { commonStyles } from './commonStyles';
 import HomeScreen from './src/screens/home';
-import {AppTheme, ThemeProvider} from './src/theme/context/themeContext';
-import {Spacing} from './src/theme/spacing';
+import { ThemeProvider } from './src/theme/context/themeContext';
+import { useTheme } from './src/theme/context/useTheme';
 
 const App = () => {
   return (
@@ -15,7 +16,7 @@ const App = () => {
 };
 
 const ThemedApp = () => {
-  const {theme} = require('./src/theme/context/useTheme').useTheme();
+  const { theme } = useTheme();
   const styles = commonStyles(theme);
   return (
     <SafeAreaView style={styles.container}>
@@ -25,12 +26,3 @@ const ThemedApp = () => {
 };
 
 export default App;
-
-export const commonStyles = (theme: AppTheme) =>
-  StyleSheet.create({
-    container: {
-      flex: 1,
-      backgroundColor: theme.palette.background,
-      paddingHorizontal: Spacing.Padding16,
-    },
-  });

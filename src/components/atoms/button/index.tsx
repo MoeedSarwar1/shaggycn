@@ -1,9 +1,10 @@
-import {Pressable} from 'react-native';
-import {useTheme} from '../../../theme/context/useTheme';
+import { Pressable } from 'react-native';
+
+import { useTheme } from '../../../theme/context/useTheme';
 import AppText from '../text';
-import {buttonStyles} from './styles';
-import {AppButtonProps} from './types';
-import {buttonSizeMap, colorMap, textSizeMap} from './utils';
+import { buttonStyles } from './styles';
+import { AppButtonProps } from './types';
+import { buttonSizeMap, colorMap, textSizeMap } from './utils';
 
 const AppButton = ({
   title,
@@ -14,7 +15,7 @@ const AppButton = ({
   action = 'solid',
   testID = 'app-button',
 }: AppButtonProps) => {
-  const {theme} = useTheme();
+  const { theme } = useTheme();
   const styles = buttonStyles();
   const colorMaps = colorMap(theme, type, action);
   const buttonSizeMaps = buttonSizeMap(styles, size);
@@ -23,19 +24,18 @@ const AppButton = ({
     <Pressable
       onPress={onPress}
       disabled={type === 'disabled'}
-      style={({pressed}) => [
+      style={({ pressed }) => [
         styles.button,
         buttonSizeMaps,
         containerStyles,
         {
-          backgroundColor: pressed
-            ? colorMaps.pressedBg ?? colorMaps.bg
-            : colorMaps.bg,
+          backgroundColor: pressed ? (colorMaps.pressedBg ?? colorMaps.bg) : colorMaps.bg,
           borderColor: colorMaps.border,
           borderWidth: colorMaps.borderWidth ?? (colorMaps.border ? 1 : 0),
         },
       ]}
-      testID={testID}>
+      testID={testID}
+    >
       <AppText color={colorMaps.text} typography={textSizeMap[size]}>
         {title}
       </AppText>

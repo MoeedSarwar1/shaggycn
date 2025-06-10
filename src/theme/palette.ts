@@ -1,4 +1,4 @@
-import {darkColors, lightColors} from './colors';
+import { darkColors, lightColors } from './colors';
 
 const palette = {
   // Primary

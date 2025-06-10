@@ -1,5 +1,6 @@
-import React, {createContext, ReactNode, useMemo, useState} from 'react';
-import {getDarkPalette, getLightPalette} from '../palette';
+import React, { createContext, ReactNode, useMemo, useState } from 'react';
+
+import { getDarkPalette, getLightPalette } from '../palette';
 
 const lightPalette = getLightPalette();
 const darkPalette = getDarkPalette();
@@ -25,13 +26,10 @@ interface ThemeContextProps {
 
 export const ThemeContext = createContext<ThemeContextProps | null>(null);
 
-export const ThemeProvider = ({children}: {children: ReactNode}) => {
+export const ThemeProvider = ({ children }: { children: ReactNode }) => {
   const [mode, setMode] = useState<ThemeMode>('light');
 
-  const theme = useMemo(
-    () => (mode === 'dark' ? darkTheme : lightTheme),
-    [mode],
-  );
+  const theme = useMemo(() => (mode === 'dark' ? darkTheme : lightTheme), [mode]);
 
   const toggleTheme = React.useCallback(
     () => setMode(prev => (prev === 'light' ? 'dark' : 'light')),
@@ -39,13 +37,9 @@ export const ThemeProvider = ({children}: {children: ReactNode}) => {
   );
 
   const contextValue = useMemo(
-    () => ({theme, mode, setMode, toggleTheme}),
+    () => ({ theme, mode, setMode, toggleTheme }),
     [theme, mode, setMode, toggleTheme],
   );
 
-  return (
-    <ThemeContext.Provider value={contextValue}>
-      {children}
-    </ThemeContext.Provider>
-  );
+  return <ThemeContext.Provider value={contextValue}>{children}</ThemeContext.Provider>;
 };

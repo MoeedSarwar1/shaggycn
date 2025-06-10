@@ -1,22 +1,17 @@
-import {AppTheme} from '../../../theme/context/themeContext';
-import {TypographyVariant} from '../../../theme/typography';
-import {ButtonAction, ButtonType, ColorMap} from './types';
+import { AppTheme } from '../../../theme/context/themeContext';
+import { TypographyVariant } from '../../../theme/typography';
+import { ButtonAction, ButtonType, ColorMap } from './types';
 
-export const textSizeMap: Record<
-  'xsmall' | 'small' | 'medium' | 'large',
-  TypographyVariant
-> = {
+type ButtonSize = 'xsmall' | 'small' | 'medium' | 'large';
+
+export const textSizeMap: Record<ButtonSize, TypographyVariant> = {
   xsmall: 'tinySemiBold',
   small: 'captionSemiBold',
   medium: 'bodySemiBold',
   large: 'bodySemiBold',
 };
 
-export const colorMap = (
-  theme: AppTheme,
-  type: ButtonType,
-  action: ButtonAction,
-): ColorMap => {
+export const colorMap = (theme: AppTheme, type: ButtonType, action: ButtonAction): ColorMap => {
   if (type === 'primary') {
     switch (action) {
       case 'solid':
@@ -113,9 +108,6 @@ export const colorMap = (
   };
 };
 
-export const buttonSizeMap = (
-  styles: Record<string, any>,
-  size: 'xsmall' | 'small' | 'medium' | 'large',
-) => {
+export const buttonSizeMap = (styles: Record<ButtonSize, object>, size: ButtonSize) => {
   return styles[size];
 };
