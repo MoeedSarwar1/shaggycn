@@ -1,6 +1,4 @@
-Here’s a clean and professional README.md for your ShaggyCn React Native boilerplate with ShadCN-inspired design system:
 
-⸻
 
 
 # ShaggyCn 🧩
