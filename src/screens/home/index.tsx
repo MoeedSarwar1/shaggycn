@@ -3,19 +3,17 @@ import {View} from 'react-native';
 import {Button, Text} from '../../components/atoms';
 import {useTheme} from '../../theme/context/useTheme';
 import {Spacing} from '../../theme/spacing';
+import {homeStyles} from './styles';
 
 const HomeScreen = () => {
   const {toggleTheme} = useTheme();
+  const styles = homeStyles();
 
   const handleToggleTheme = () => {
     toggleTheme();
   };
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: 'space-between',
-      }}>
+    <View style={styles.container}>
       <View>
         <Text typography="bodyRegular">Welcome To The</Text>
         <Text typography="displayLargeRegular">Boilerplate!</Text>

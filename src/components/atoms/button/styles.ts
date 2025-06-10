@@ -1,8 +1,7 @@
 import {StyleSheet} from 'react-native';
-import {AppTheme} from '../../../theme/context/themeContext';
 import {Spacing} from '../../../theme/spacing';
 
-export const buttonStyles = (theme: AppTheme) =>
+export const buttonStyles = () =>
   StyleSheet.create({
     button: {
       borderRadius: 4,

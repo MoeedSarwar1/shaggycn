@@ -15,7 +15,7 @@ const AppButton = ({
   testID = 'app-button',
 }: AppButtonProps) => {
   const {theme} = useTheme();
-  const styles = buttonStyles(theme);
+  const styles = buttonStyles();
   const colorMaps = colorMap(theme, type, action);
   const buttonSizeMaps = buttonSizeMap(styles, size);
 
