@@ -55,10 +55,9 @@ src/
 ⸻
 
 🛠 Scripts
-	•	yarn lint: Lint code with ESLint
-	•	yarn format: Format code with Prettier
-	•	yarn test: Run tests
-	•	yarn prepare: Prepare Git hooks with Husky
+• yarn lint: Lint code with ESLint
+• yarn format: Format code with Prettier
+• yarn test: Run tests
 
 ⸻
 
