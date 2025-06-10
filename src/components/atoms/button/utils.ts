@@ -112,3 +112,10 @@ export const colorMap = (
     text: theme.palette.onPrimary,
   };
 };
+
+export const buttonSizeMap = (
+  styles: Record<string, any>,
+  size: 'xsmall' | 'small' | 'medium' | 'large',
+) => {
+  return styles[size];
+};

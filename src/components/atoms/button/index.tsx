@@ -3,7 +3,7 @@ import {useTheme} from '../../../theme/context/useTheme';
 import AppText from '../text';
 import {buttonStyles} from './styles';
 import {AppButtonProps} from './types';
-import {colorMap, textSizeMap} from './utils';
+import {buttonSizeMap, colorMap, textSizeMap} from './utils';
 
 const AppButton = ({
   title,
@@ -17,13 +17,7 @@ const AppButton = ({
   const {theme} = useTheme();
   const styles = buttonStyles(theme);
   const colorMaps = colorMap(theme, type, action);
-
-  const buttonSizeMap = {
-    xsmall: styles.xsmall,
-    small: styles.small,
-    medium: styles.medium,
-    large: styles.large,
-  };
+  const buttonSizeMaps = buttonSizeMap(styles, size);
 
   return (
     <Pressable
@@ -31,7 +25,7 @@ const AppButton = ({
       disabled={type === 'disabled'}
       style={({pressed}) => [
         styles.button,
-        buttonSizeMap[size],
+        buttonSizeMaps,
         containerStyles,
         {
           backgroundColor: pressed
