@@ -5,7 +5,7 @@ import {useTheme} from '../../theme/context/useTheme';
 import {Spacing} from '../../theme/spacing';
 
 const HomeScreen = () => {
-  const {theme, toggleTheme} = useTheme();
+  const {toggleTheme} = useTheme();
 
   const handleToggleTheme = () => {
     toggleTheme();
@@ -17,7 +17,7 @@ const HomeScreen = () => {
         justifyContent: 'space-between',
       }}>
       <View>
-        <Text typography="BodyRegular">Welcome To The</Text>
+        <Text typography="bodyRegular">Welcome To The</Text>
         <Text typography="displayLargeRegular">Boilerplate!</Text>
       </View>
       <View style={{gap: Spacing.Margin16}}>

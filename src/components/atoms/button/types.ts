@@ -1,4 +1,6 @@
-import { PressableProps, StyleProp } from 'react-native';
+import {PressableProps, StyleProp} from 'react-native';
+export type ButtonType = 'primary' | 'secondary' | 'disabled';
+export type ButtonAction = 'solid' | 'subtle' | 'outline' | 'ghost';
 
 export interface AppButtonProps {
   /**
@@ -23,12 +25,12 @@ export interface AppButtonProps {
    * The color of the button.
    * Defaults to 'primary'.
    */
-  type?: 'primary' | 'secondary' | 'disabled';
+  type?: ButtonType;
   /**
    * The background color of the button.
    * Defaults to 'solid'.
    * */
-  action?: 'solid' | 'subtle' | 'outline' | 'ghost' ;
+  action?: ButtonAction;
   /**
    * Additional styles for the button container.
    */
@@ -37,4 +39,12 @@ export interface AppButtonProps {
    * The test ID for the button.
    */
   testID?: string;
+}
+
+export interface ColorMap {
+  bg: string;
+  text: string;
+  pressedBg?: string;
+  border?: string;
+  borderWidth?: number;
 }
