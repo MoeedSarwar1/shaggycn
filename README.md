@@ -19,7 +19,7 @@ A modern, opinionated **React Native + TypeScript** boilerplate with a reusable 
 - [TypeScript](https://www.typescriptlang.org/)
 - [NativeBase](https://nativebase.io/) v3.4 Design Kit
 - [React Native Vector Icons](https://github.com/oblador/react-native-vector-icons)
-- [ShadCN-style theming](https://ui.shadcn.dev/)
+- [ShadCN-style Colors](https://ui.shadcn.com/colors)
 - [ESLint + Prettier](https://eslint.org/)
 
 ---
