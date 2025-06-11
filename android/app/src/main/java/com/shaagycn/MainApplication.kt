@@ -1,4 +1,4 @@
-package com.shaagycn
+package com.ShaggyCN
 
 import android.app.Application
 import com.facebook.react.PackageList

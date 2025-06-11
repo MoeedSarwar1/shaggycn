@@ -1,7 +1,6 @@
-# ShaggyCn 🧩
+# ShaggyCN 🧩
 
 A modern, opinionated **React Native + TypeScript** boilerplate with a reusable UI component library — inspired by **ShadCN** and powered by **NativeBase Design Kit v3.4**. Designed for developers who want a clean, scalable, and themeable starting point for building mobile apps.
-
 
 ## ✨ Features
 
@@ -29,7 +28,7 @@ A modern, opinionated **React Native + TypeScript** boilerplate with a reusable 
 
 ```bash
 # Clone the repo
-git clone https://github.com/MoeedSarwar1/shaggycn.git
+git clone https://github.com/MoeedSarwar1/ShaggyCN.git
 
 # Install dependencies
 yarn install
