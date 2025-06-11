@@ -28,7 +28,7 @@ A modern, opinionated **React Native + TypeScript** boilerplate with a reusable 
 
 ```bash
 # Clone the repo
-git clone https://github.com/MoeedSarwar1/ShaggyCN.git
+git clone https://github.com/MoeedSarwar1/shaggycn.git
 
 # Install dependencies
 yarn install
