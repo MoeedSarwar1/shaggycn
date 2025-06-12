@@ -1,81 +1,90 @@
-# ShaggyCN 🧩
+# 🧩 ShaggyCN
 
-A modern, opinionated **React Native + TypeScript** boilerplate with a reusable UI component library — inspired by **ShadCN** and powered by **NativeBase Design Kit v3.4**. Designed for developers who want a clean, scalable, and themeable starting point for building mobile apps.
+A modern, opinionated **React Native + TypeScript** boilerplate with a reusable UI component library — inspired by **ShadCN** and powered by the **NativeBase Design Kit v3.4**.
+Designed for developers who want a clean, scalable, and themeable starting point for building mobile apps.
+
+---
 
 ## ✨ Features
 
-- ⚛️ **React Native** with TypeScript
-- 🎨 **Dark & Light theme** support
-- 💅 ShadCN-inspired **design tokens** (color palette, spacing, typography)
-- 🧱 Pre-built, reusable **UI components**
-- 🧼 Pre-configured **ESLint, Prettier, Husky**
-- 🚀 Ready for **open-source contribution**
+* ⚛️ Built with **React Native** + **TypeScript**
+* 🌗 Fully responsive **Light & Dark Theme** support
+* 🎨 **ShadCN-style** design tokens (colors, spacing, typography)
+* 🧱 Modular, reusable **UI components**
+* 🧼 Pre-configured **ESLint**, **Prettier**, and **Husky** for consistent code
+* 🧪 Built-in **Jest** support for unit tests with 100% coverage enforcement
+* 🚀 Ready for **Open Source Contribution**
 
 ---
 
 ## 📦 Tech Stack
 
-- [React Native](https://reactnative.dev/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [NativeBase](https://nativebase.io/) v3.4 Design Kit
-- [React Native Vector Icons](https://github.com/oblador/react-native-vector-icons)
-- [ShadCN-style Colors](https://ui.shadcn.com/colors)
-- [ESLint + Prettier](https://eslint.org/)
+* [React Native](https://reactnative.dev/)
+* [TypeScript](https://www.typescriptlang.org/)
+* [NativeBase Design Kit v3.4](https://nativebase.io/)
+* [React Native Vector Icons](https://github.com/oblador/react-native-vector-icons)
+* [ShadCN Color Palette](https://ui.shadcn.com/colors)
+* [ESLint](https://eslint.org/) + [Prettier](https://prettier.io/) + [Husky](https://typicode.github.io/husky/)
 
 ---
 
 ## 🚀 Getting Started
 
 ```bash
-# Clone the Repository
+# Clone the repository
 git clone https://github.com/MoeedSarwar1/shaggycn.git
 
 # Install dependencies
 yarn install
 
 # Start the app
-yarn android # or yarn ios
-
-
-⸻
-
-📁 Folder Structure
-
-src/
-├── components/      # UI components
-│   └── atoms/
-│   └── molecules/
-├── theme/           # Theme context and tokens
-├── utils/           # Helper functions
-├── hooks/           # Custom hooks
-└── App.tsx
-
-
-⸻
-
-🛠 Scripts
-• yarn lint: Lint code with ESLint
-• yarn format: Format code with Prettier
-• yarn test: Run tests
-
-⸻
-
+yarn android    # for Android
+# or
+yarn ios        # for iOS
 ```
 
-🤝 Contributing
+---
 
-We welcome contributions! Please open issues or pull requests if you want to improve something.
+## 📁 Folder Structure
 
-⸻
+```
+src/
+├── components/        # UI components
+│   ├── atoms/
+│   └── molecules/
+├── theme/             # Theme context, color palette, tokens
+├── hooks/             # Custom React hooks
+├── utils/             # Shared utility functions
+└── App.tsx            # Root entry point
+```
 
-📄 License
+---
 
-MIT License © 2025 Moeed Sarwar
+## 🛠 Available Scripts
 
-⸻
+| Script          | Description                    |
+| --------------- | ------------------------------ |
+| `yarn lint`     | Run ESLint to check code style |
+| `yarn format`   | Format code using Prettier     |
+| `yarn test`     | Run all tests via Jest         |
+| `yarn coverage` | Generate code coverage report  |
 
-⭐️ Show Some Love
+---
 
-If you like the project, feel free to give it a ⭐ on GitHub and share it with the community.
+## 🤝 Contributing
+
+We welcome contributions! Feel free to fork the repo, submit pull requests, or open issues to help improve the project.
+
+---
+
+## 📄 License
+
+MIT License © 2025 [Moeed Sarwar](https://github.com/MoeedSarwar1)
+
+---
+
+## ⭐️ Show Some Love
+
+If you find this project helpful, consider starring ⭐ the repo and sharing it with other developers!
 
 ---
