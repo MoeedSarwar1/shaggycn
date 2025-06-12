@@ -1,7 +1,7 @@
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 
 import { commonStyles } from './commonStyles';
-import HomeScreen from './src/screens/home';
+import AppNavigation from './src/navigation';
 import { ThemeProvider } from './src/theme/context/themeContext';
 import { useTheme } from './src/theme/context/useTheme';
 
@@ -20,7 +20,7 @@ const ThemedApp = () => {
   const styles = commonStyles(theme);
   return (
     <SafeAreaView style={styles.container}>
-      <HomeScreen />
+      <AppNavigation />
     </SafeAreaView>
   );
 };

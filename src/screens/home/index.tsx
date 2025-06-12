@@ -6,8 +6,8 @@ import { Spacing } from '../../theme/spacing';
 import { homeStyles } from './styles';
 
 const HomeScreen = () => {
-  const { toggleTheme } = useTheme();
-  const styles = homeStyles();
+  const { toggleTheme, theme } = useTheme();
+  const styles = homeStyles(theme);
 
   const handleToggleTheme = () => {
     toggleTheme();
