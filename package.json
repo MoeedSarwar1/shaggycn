@@ -10,7 +10,7 @@
     "lint": "eslint . --ext .ts,.tsx",
     "lint:fix": "eslint . --ext .ts,.tsx --fix",
     "format": "prettier --write .",
-    "prepare": "husky install",
+    "prepare": "husky",
     "test:coverage-check": "jest --coverage && npx check-coverage --threshold 100",
     "test:coverage": "jest --coverage"
   },
@@ -54,5 +54,11 @@
   },
   "engines": {
     "node": ">=18"
+  },
+  "lint-staged": {
+    "src/**/*.{js,ts,tsx}": [
+      "prettier --write",
+      "eslint"
+    ]
   }
 }
