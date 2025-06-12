@@ -36,7 +36,7 @@ const AppButton = ({
       ]}
       testID={testID}
     >
-      <AppText color={colorMaps.text} typography={textSizeMap[size]}>
+      <AppText color={colorMaps.text as keyof typeof theme.palette} typography={textSizeMap[size]}>
         {title}
       </AppText>
     </Pressable>
