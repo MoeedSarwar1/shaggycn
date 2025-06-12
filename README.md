@@ -27,7 +27,7 @@ A modern, opinionated **React Native + TypeScript** boilerplate with a reusable 
 ## 🚀 Getting Started
 
 ```bash
-# Clone the repo
+# Clone the Repo
 git clone https://github.com/MoeedSarwar1/shaggycn.git
 
 # Install dependencies
