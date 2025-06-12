@@ -1,5 +1,5 @@
 import { PressableProps, StyleProp } from 'react-native';
-export type ButtonType = 'primary' | 'secondary' | 'disabled';
+export type ButtonType = 'primary' | 'secondary' | 'disabled' | 'pressed';
 export type ButtonAction = 'solid' | 'subtle' | 'outline' | 'ghost';
 
 export interface AppButtonProps {

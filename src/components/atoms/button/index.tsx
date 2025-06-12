@@ -29,9 +29,10 @@ const AppButton = ({
         buttonSizeMaps,
         containerStyles,
         {
-          backgroundColor: pressed ? (colorMaps.pressedBg ?? colorMaps.bg) : colorMaps.bg,
+          backgroundColor:
+            type === 'pressed' || pressed ? (colorMaps.pressedBg ?? colorMaps.bg) : colorMaps.bg,
           borderColor: colorMaps.border,
-          borderWidth: colorMaps.borderWidth ?? (colorMaps.border ? 1 : 0),
+          borderWidth: colorMaps.borderWidth ?? colorMaps.border,
         },
       ]}
       testID={testID}

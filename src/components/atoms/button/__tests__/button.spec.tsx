@@ -1,5 +1,4 @@
 import { fireEvent, render } from '@testing-library/react-native';
-import React from 'react';
 
 import { ThemeProvider } from '../../../../theme/context/themeContext';
 import AppButton from '../index';
@@ -47,6 +46,7 @@ describe('AppButton', () => {
       action: 'solid',
     });
     expect(getByText('Primary Solid')).toBeTruthy();
+
     renderWithTheme({
       title: 'Secondary Subtle',
       type: 'secondary',
@@ -67,6 +67,51 @@ describe('AppButton', () => {
       type: 'disabled',
       action: 'solid',
       disabled: true,
+    });
+    renderWithTheme({
+      title: 'Primary Subtle',
+      type: 'primary',
+      action: 'subtle',
+    });
+    renderWithTheme({
+      title: 'Primary Ghost',
+      type: 'primary',
+      action: 'ghost',
+    });
+    renderWithTheme({
+      title: 'Secondary Outline',
+      type: 'secondary',
+      action: 'outline',
+    });
+    renderWithTheme({
+      title: 'Secondary Solid',
+      type: 'secondary',
+      action: 'solid',
+    });
+    renderWithTheme({
+      title: 'Disabled Subtle',
+      type: 'disabled',
+      action: 'subtle',
+    });
+    renderWithTheme({
+      title: 'Disabled Outline',
+      type: 'disabled',
+      action: 'outline',
+    });
+    renderWithTheme({
+      title: 'Disabled Ghost',
+      type: 'disabled',
+      action: 'ghost',
+    });
+    renderWithTheme({
+      title: 'Default Button',
+      type: '',
+      action: '',
+    });
+    renderWithTheme({
+      title: 'Pressed Button',
+      type: 'pressed',
+      action: '',
     });
   });
 

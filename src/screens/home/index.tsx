@@ -15,11 +15,11 @@ const HomeScreen = () => {
   return (
     <View style={styles.container}>
       <View>
-        <Text typography="bodyRegular">Welcome To The</Text>
-        <Text typography="displayLargeRegular">Boilerplate!</Text>
+        <Text typography="bodyRegular">Welcome To</Text>
+        <Text typography="displayLargeBold">ShaggyCN</Text>
       </View>
       <View style={{}}>
-        <Text typography="bodyRegular">Things You Will Find Here Are:</Text>
+        <Text typography="bodyRegular">You Will Find:</Text>
         <View style={{ gap: Spacing.Margin2 }}>
           <Text typography="displayMediumRegular">Atoms</Text>
           <Text typography="displayMediumRegular">Molecules</Text>
@@ -37,7 +37,7 @@ const HomeScreen = () => {
         onPress={handleToggleTheme}
         size="large"
         type="primary"
-        action="solid"
+        action="outline"
       />
     </View>
   );
