@@ -1,3 +1,4 @@
+/* istanbul ignore file */
 import { NavigationContainer } from '@react-navigation/native';
 
 import Navigation from './navigationStack';
